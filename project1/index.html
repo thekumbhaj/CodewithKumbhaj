@@ -1,0 +1,45 @@
+<div class="panels">
+    <div class="panel">
+      <div class="resizer"></div>
+      <pre>
+        <code class="language-css">
+  .panels {
+    display: grid;
+    /* The Trick 👇 */
+    grid-template-columns: auto 1fr;
+  }
+  .resizer {
+    overflow: hidden;
+    resize: horizontal;
+    /* Scale up the handle */
+    scale: 4;
+    max-width: 100cqi;
+    clip-path: inset(
+      calc(100% - 12px)
+      0
+      0
+      calc(100% - 12px)
+    );
+  }
+        </code>
+      </pre>
+    </div>
+    <div class="panel">
+      <pre>
+        <code class="language-html">
+  &lt;div class="panels"&gt;
+    &lt;div class="panel"&gt;
+      &lt;!-- The Magic Element 👇 --&gt;
+      &lt;div class="resizer"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="panel"&gt;&lt;/div&gt;    
+  &lt;/div&gt;
+  &lt;!--
+    The "Trick" is to lean into display: grid.
+    Use a relatively positioned resizable element.
+    And scale it up so you can grab the handle.
+  --&gt;
+        </code>
+      </pre>
+    </div>
+  </div>
