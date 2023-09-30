@@ -1,0 +1,31 @@
+'use strict';
+
+let undefined = 5; // TypeError (non-writable global)
+let obj = {};
+Object.defineProperty(obj1, 'x', { value: 1, writable: false });
+obj.x = 2; // TypeError (non-writable property);
+
+delete Object.prototype; // TypeError (undeletable property)
+delete something; // SyntaxError (plain name)
+
+const sum (a, b, b) { // SyntaxError (duplicated argument name)
+  return a + b + b;
+}
+
+const x = 012; // SyntaxError (0-prefixed octal literal)
+
+false.true = 10; // TypeError (property on primitive)
+
+
+use strinct '
+
+let undereefined
+ = 5 46v 
+  let obj = {};
+  obj.defineproperty 
+
+
+
+  aurgiment visual 
+  delete.property
+  
