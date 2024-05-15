@@ -1,0 +1,16 @@
+oops
+object oriented programming
+
+1. encaptulation : Encapsulation in Java is a mechanism of wrapping the data (variables) and
+ the methods that act on that data into a single unit to form a capsule. This is to prevent the data from being accessed
+ 
+ 
+ directly by the outside functions and to ensure that the data can only be modified by the methods provided.
+
+
+Privet: data members are accese able in class.
+public: data members are accesseable anywhere.
+
+2. abstraction : 
+
+3. incaptulations : 
